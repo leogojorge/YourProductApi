@@ -11,6 +11,10 @@ namespace YourProductApi.AutoMapperCoreTests
 {
     public class MapperCoreTests
     {
+        public MapperCoreTests()
+        {
+            Mapper.Initialize(m => m.AddProfile<MappingProfile>());
+        }
 
         [Fact]
         public void ShouldMapSavedProductRequestToProduct()
@@ -27,7 +31,6 @@ namespace YourProductApi.AutoMapperCoreTests
             };
             MapperCore sut = new MapperCore();
 
-            Mapper.Initialize(m => m.AddProfile<MappingProfile>());
             var product = sut.Map<SaveProductRequest, Product>(saveProductRequest);
             Mapper.Reset();
 
@@ -49,7 +52,6 @@ namespace YourProductApi.AutoMapperCoreTests
             };
             MapperCore sut = new MapperCore();
 
-            Mapper.Initialize(m => m.AddProfile<MappingProfile>());
             var productSaved = sut.Map<Product, SavedProductResponse>(product);
             Mapper.Reset();
 
@@ -57,5 +59,3 @@ namespace YourProductApi.AutoMapperCoreTests
         }
     }
 }
-
-

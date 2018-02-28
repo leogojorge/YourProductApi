@@ -7,10 +7,16 @@ namespace YourProductApi.InfrastructureTests.IntegrationTests.Models
 {
     public class ProductMongoTests
     {
-        [Fact]
-        public void ShouldSerializeProductIdAttribute()
+        ProductMongo sut;
+
+        public ProductMongoTests()
         {
-            ProductMongo sut = new ProductMongo
+            sut = CreateProductMongo();
+        }
+
+        public ProductMongo CreateProductMongo()
+        {
+            return new ProductMongo
             {
                 brand = "Chevrolet",
                 code = "ut51Gjqi351",
@@ -21,7 +27,11 @@ namespace YourProductApi.InfrastructureTests.IntegrationTests.Models
                 price = 700,
                 type = "Autopeças"
             };
+        }
 
+        [Fact]
+        public void ShouldSerializeProductIdAttribute()
+        {
             var document = sut.ToBsonDocument();
 
             Assert.Equal(BsonType.ObjectId, document["_id"].BsonType);
@@ -30,8 +40,6 @@ namespace YourProductApi.InfrastructureTests.IntegrationTests.Models
         [Fact]
         public void ShouldSerializeProductPriceAttribute()
         {
-            ProductMongo sut = new ProductMongo();
-
             var document = sut.ToBsonDocument();
 
             Assert.Equal(BsonType.Double, document["price"].BsonType);

@@ -18,7 +18,7 @@ namespace YourProductApi.Infrastructure
         private IMongoContext MongoContext;
         private IMapperCore mapper;
 
-        public IMongoCollection<ProductMongo> ProductCollection
+        public IMongoCollection<ProductMongo> ProductCollection 
         { get { return MongoContext.Database.GetCollection<ProductMongo>("product"); } }
 
         public ProductRepository(IMongoContext mongoDbSettings, IMapperCore mapper)
@@ -136,7 +136,6 @@ namespace YourProductApi.Infrastructure
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
 

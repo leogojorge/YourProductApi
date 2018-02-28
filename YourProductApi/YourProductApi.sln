@@ -19,11 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProductApi.AutoMapperCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProductApi.Application.Models", "YourProductApi.Application.Models\YourProductApi.Application.Models.csproj", "{B48C11B9-BCFB-493E-8E67-2D7363029468}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProductApi.ApplicationTests", "YourProductApi.ApplicationTests\YourProductApi.ApplicationTests.csproj", "{35884A50-7E0B-42F3-855A-FE0961206057}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProductApi.AutoMapperCoreTests", "YourProductApi.AutoMapperCoreTests\YourProductApi.AutoMapperCoreTests.csproj", "{A7EBEEB3-711C-4167-9E7A-700E3EFA676E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourProductApi.Infrastructure.Models", "YourProductApi.Infrastructure.Models\YourProductApi.Infrastructure.Models.csproj", "{14B42283-007E-457D-AFE5-5C52D0079B1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourProductApi.Infrastructure.Models", "YourProductApi.Infrastructure.Models\YourProductApi.Infrastructure.Models.csproj", "{14B42283-007E-457D-AFE5-5C52D0079B1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +61,6 @@ Global
 		{B48C11B9-BCFB-493E-8E67-2D7363029468}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B48C11B9-BCFB-493E-8E67-2D7363029468}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B48C11B9-BCFB-493E-8E67-2D7363029468}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35884A50-7E0B-42F3-855A-FE0961206057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35884A50-7E0B-42F3-855A-FE0961206057}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35884A50-7E0B-42F3-855A-FE0961206057}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35884A50-7E0B-42F3-855A-FE0961206057}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A7EBEEB3-711C-4167-9E7A-700E3EFA676E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A7EBEEB3-711C-4167-9E7A-700E3EFA676E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7EBEEB3-711C-4167-9E7A-700E3EFA676E}.Release|Any CPU.ActiveCfg = Release|Any CPU

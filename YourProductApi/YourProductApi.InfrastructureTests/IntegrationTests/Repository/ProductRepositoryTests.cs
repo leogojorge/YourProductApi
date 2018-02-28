@@ -22,10 +22,9 @@ namespace YourProductApi.InfrastructureTests.IntegrationTests.Repository
             sut = new ProductRepository(new MongoContext(), new MapperCore());
         }
 
-        [Fact]
-        public void ShouldSaveAProduct()
+        public Product CreateProduct()
         {
-            Product product = new Product
+            return new Product
             {
                 Brand = "BBS",
                 Code = new ObjectId().ToString(),
@@ -35,6 +34,12 @@ namespace YourProductApi.InfrastructureTests.IntegrationTests.Repository
                 Price = 5000,
                 Type = "Autopeças"
             };
+        }
+
+        [Fact]
+        public void ShouldSaveAProduct()
+        {
+            var product = CreateProduct();
 
             sut.Save(product);
             Mapper.Reset();
