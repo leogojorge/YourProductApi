@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YourProductApi.Application.Models\YourProductApi.Application.Models.csproj" />
+    <ProjectReference Include="..\YourProductApi.Domain\YourProductApi.Domain.csproj" />
+    <ProjectReference Include="..\YourProductApi.Infrastructure.Models\YourProductApi.Infrastructure.Models.csproj" />
+  </ItemGroup>
+
+</Project>

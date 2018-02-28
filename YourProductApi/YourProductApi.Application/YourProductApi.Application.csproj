@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YourProductApi.Application.Models\YourProductApi.Application.Models.csproj" />
+    <ProjectReference Include="..\YourProductApi.AutoMapperCore\YourProductApi.AutoMapperCore.csproj" />
+    <ProjectReference Include="..\YourProductApi.Domain\YourProductApi.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.server.kestrel.transport.libuv\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

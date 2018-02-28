@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  yourproductapi.webservice:
+    image: yourproductapi.webservice
+    build:
+      context: .
+      dockerfile: YourProductApi.WebService\Dockerfile
