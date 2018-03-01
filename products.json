@@ -1,0 +1,13 @@
+database -> YourProductApi
+"products" : [
+    {
+    "_id":"5a9764c41f31b81fc0f7ac6d",
+    "name":"name",
+    "description":"description",
+    "imageUrl":"imageUrl",
+    "type":"type",
+    "price":1,
+    "brand":"brand",
+    "code":"code"
+    }
+]
