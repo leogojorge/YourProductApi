@@ -22,9 +22,8 @@ Criei a coleção products com os campos requeridos e adicionei um index único 
 Por eu ter tido problemas com o Docker e não ter criado uma imagem pro banco, criei o arquivo products.json com a especificação da minha coleção.
 
 *FRACASSOS*
-Docker: Dediquei muito tempo a criação da minha aplicação inteira com docker (sistema + banco). Consegui criar e publicar minha imagem no Docker Hub apenas com a aplicação, sem o Mongo. O sistema sempre retorna exceção ao receber requisições, por não ter banco. Publiquei mesmo nessas condições para deixar claro que eu realmente estudei e coloquei a mão na massa para conseguir o melhor resultado.
-Consegui rodar os conteiners e manipular as imagens local.
-Como imaginei que teria uma curva de aprendizado grande para aprender a lidar com Mongo e Docker, decidi não me dedicar ao código a maior parte do tempo, seguindo a filosofia de primeiro tornar o software funcional, refatorar e abstrair.
+Docker: Dediquei muito tempo a criação da minha aplicação inteira com docker (sistema + banco). Consegui rodar os conteiners e manipular as imagens local.
+Como imaginei que teria uma curva de aprendizado grande para aprender a lidar com Mongo e Docker, decidi não me dedicar ao código a maior parte do tempo e focar nos assuntos mais difícies de estudo. Desenvolvi seguindo a filosofia de primeiro tornar o software funcional, posteriormente refatorar e abstrair.
 
 *CONSIDERAÇÕES*
 Gostei muito de passar uma semana inteira mergulhado no estudo dessas tecnologias. Posso dizer que cresci muito me dedicando ao desafio. Descobrir a injeção de dependência nativa do .NET Core e a forma que ele implementa API em comparação com o .net framework foi incrível. Conectar o Mongo ao .NET e entender seu funcionamento foi a melhor parte do desafio pra mim.
